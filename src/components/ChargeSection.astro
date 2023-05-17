@@ -1,18 +1,17 @@
-<section class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden" data-header-color='black'> 
-    <div class="z-30 relative h-full flex flex-col">
-        <header class="flex flex-col">
-            <h1 class="text-black pt-40 text-[40px] font-medium">Accesorios</h1>
-            <!-- <p class="text-white text-base">Programe una prueba de conducción hoy mismo</p> -->
-        </header>
-        <footer class="flex flex-col flex-grow justify-end pb-20"><!--flex-grow dice ocupa todo el espacio que puedas-->
-            <div>
-                <a class=" border-[3px] border-black text-sm  rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors" href="#">
-                    Comprar ahora
-                </a>
-            </div>
-        </footer>
-    </div>
-    <div class="absolute top-0 bottom-0 h-full w-full z-10"><!--se lo pone top-0 y bottom-0 para estirar el contenido tanto por arriba como por abajo-->
-        <img class="object-center object-cover h-full w-full" src="public/charge.avif" alt="Cargador"></img>
-    </div>
-</section> 
+---
+import Section from "./Section.astro"
+---
+
+    <Section title='Accesorios' color="black">
+        <div slot="footer" class="gap-x-6 flex mx-auto">
+            <a class="border-[3px] border-gray-600 bg-gray-700/100 text-sm  rounded font-medium text-white px-16 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500" href="#">
+                Saber más
+            </a>
+          
+        </div>
+        <img slot="background" class="object-cover h-full w-full" src="public/charge.avif" alt="Charge"></img>
+ 
+    </Section>
+  
+
+
